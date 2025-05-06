@@ -51,6 +51,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Professor',
             fields=[
+                
                 ('NI', models.IntegerField(primary_key=True, serialize=False)),
                 ('nome', models.CharField(blank=True, max_length=150, null=True)),
                 ('email', models.EmailField(blank=True, max_length=254, null=True)),

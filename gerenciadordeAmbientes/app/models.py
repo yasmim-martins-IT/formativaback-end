@@ -17,6 +17,7 @@ class Usuario(AbstractUser):
 
 
 class Professor(models.Model):
+    user = models.OneToOneField(Usuario, on_delete=models.CASCADE)
     NI = models.IntegerField(primary_key=True)
     nome = models.CharField(max_length=150, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
