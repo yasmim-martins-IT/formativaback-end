@@ -7,5 +7,6 @@ urlpatterns = [
     path('usuarios/', UsuarioCreateAPIView.as_view(), name='criar_usuario'),
     path('professor/<int:pk>/', ProfessorRetrieveUpdateDestroy.as_view(), name = 'atualizarProfessor'),
     path('MinhasDisciplinas/' , Disciplinas.as_view(), name = 'verDisiciplinas'),
-    path('MinhasReservas/' , MinhasReservas.as_view(), name ='verReservas'  )
+    path('MinhasReservas/' , MinhasReservas.as_view(), name ='verReservas'  ),
+    path('reservarAmbientes/', ReservadeAmbientesListCreateApiView.as_view(), name='reservar')
 ]
